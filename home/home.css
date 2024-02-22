@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    color: #FBF8F8;
+    margin-left: 350px;
+}
+.djokwa{
+    font-size: 30px;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    padding-top: 10px;
+}
+button{
+    margin: 20px;
+}
+a:hover{
+    background-color: darkblue;
+}
+.container{
+    display: inline-grid;
+    grid-template-columns: repeat(autofit, minmax(50px, auto));
+    grid-template-rows: repeat(3, minmax(200px, auto));
+    width: 100% ;
+}
+.side-bar{
+    grid-column-start: 1;
+    /* grid-column-end: ; */
+    grid-row-start: 1;
+    grid-row-end: 10;
+    background-color: #C95142;
+}
+.main{
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    background-color: lightgray; 
+    color: black;
+}
+.side-bar {
+    display: grid;
+    grid-template-rows: repeat(autofit, minmax(200px, auto));
+}
+.header{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.form{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    background-color: white;
+}
+.input{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background: transparent;
+    border: 1px solid black;
+    resize: none;
+}
+.submit{
+    padding: 15px 35px;
+    color: white;
+    background-color: #0A4378;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+label{
+    margin-top: 50px;
+    /* margin-left: 430px; */
+}
